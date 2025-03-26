@@ -8,7 +8,7 @@
 - [How We Built It](#)
 - [Challenges We Faced](#)
 - [How to Run](#)
-- [Tech Stack](#Generative AI Model - Gemini-1.5-Flash, Android Native Development, Android Studio, Kotlin)
+- [Tech Stack](#)
 - [Team](#UAIEnthusiasts)
 
 ---
@@ -39,14 +39,14 @@ Initially we tried with Open AI model but later came to know it has some limited
 As this is a Native Android Mobile App, you need to run the project in Android Studio IDE which will build an APK file and the same can be installed on Android Mobile Device/Emulator.
 
 ## 🏗️ Tech Stack
-- 🔹 Frontend: Native Android
-- 🔹 Backend: Google AI Client embedded in Fronend 
+- 🔹 Frontend: Native Android, Kotlin
+- 🔹 Backend: Google AI Client SDK (Gemini) embedded in Frontend 
 - 🔹 Database: NA
 - 🔹 Other: Gemini-1.5-Flash AI Model
 
 ## 👥 Team - UAIEnthusiasts
 - **Ajoy Kumar** - [GitHub](#) | [LinkedIn](#)
-- **Abhijeet M Roy** - [GitHub](#) | [LinkedIn](#)
-- **Balbir Singh** - [GitHub](#) | [LinkedIn](#)
 - **Elius Mamun** - [GitHub](#) | [LinkedIn](#)
+- **Balbir Singh** - [GitHub](#) | [LinkedIn](#)
+- **Abhijeet M Roy** - [GitHub](#) | [LinkedIn](#)
 - **Sushil Singh** - [GitHub](#) | [LinkedIn](#)
