@@ -30,7 +30,7 @@ To make human life easy to process customer requests with cutting edge technolog
 It reads the requests in email docs, analyses the same and classifies the content into predefined request categories like type, subtype, etc.
 
 ## 🛠️ How We Built It
-We made use of cutting edge technologies like Generative AI, Native Mobile tech to achieve this goal.
+We made use of cutting edge technologies like Generative AI, Native Mobile tech to achieve this goal. Developed a refined prompt to query the Generative AI model to receive the expected response.
 
 ## 🚧 Challenges We Faced
 Initially we tried with Open AI model but later came to know it has some limited quota which was exceeded. Hence, we switched to another model from Google (Gemini-1.5-Flash) which actually helped us to complete this challenge. We were flexible enough to switch between the two AI Model providers at run time of the hackathon event. 
@@ -42,7 +42,7 @@ As this is a Native Android Mobile App, you need to run the project in Android S
 - 🔹 Frontend: Native Android, Kotlin
 - 🔹 Backend: Google AI Client SDK (Gemini) embedded in Frontend 
 - 🔹 Database: NA
-- 🔹 Other: Gemini-1.5-Flash AI Model
+- 🔹 Other: Gemini-1.5-Flash AI Model, Prompt Engineering
 
 ## 👥 Team - UAIEnthusiasts
 - **Ajoy Kumar** - [GitHub](#) | [LinkedIn](#)
