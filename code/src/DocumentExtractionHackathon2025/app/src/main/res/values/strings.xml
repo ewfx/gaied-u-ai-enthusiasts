@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">DocumentExtractionHackathon2025</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Pdf Extractor Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="txt_pdf_extractor">Document Extractor</string>
+
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+    </string>
+    <string name="pick_pdf">Pick PDF</string>
+    <string name="submit">Submit</string>
+    <string name="enter_text_here">Enter text here..</string>
+    <string name="clear">Clear</string>
+    <string name="or">OR</string>
+</resources>
