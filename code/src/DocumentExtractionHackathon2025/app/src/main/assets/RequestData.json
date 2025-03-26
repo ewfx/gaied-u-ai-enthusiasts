@@ -1,0 +1,96 @@
+[
+  {
+    "name": "Adjustment",
+    "definition": "Adjustment refers to any change made to a loan account or transaction to correct an error, update payment details, or accommodate customer requests. This may include modifying interest rates, correcting overcharges, waiving fees, or revising payment schedules. Adjustments ensure accurate account management and compliance with banking policies."
+  },
+  {
+    "name": "Au Transfer",
+    "definition": "This is the main request type"
+  },
+  {
+    "name": "Closing Notice",
+    "definition": "",
+    "subtype": [
+      {
+        "name": "Reallocation fees",
+        "definition": ""
+      },
+      {
+        "name": "Amendment fees",
+        "definition": ""
+      },
+      {
+        "name": "Reallocation Principal",
+        "definition": ""
+      }
+    ]
+  },
+  {
+    "name": "Commitment Change",
+    "definition": "",
+    "subtype": [
+      {
+        "name": "Cashless Roll",
+        "definition": ""
+      },
+      {
+        "name": "Decrease",
+        "definition": ""
+      },
+      {
+        "name": "Increase",
+        "definition": ""
+      }
+    ]
+  },
+  {
+    "name": "Fee Payment",
+    "definition": "",
+    "subtype": [
+      {
+        "name": "Ongoing fee",
+        "definition": ""
+      },
+      {
+        "name": "Letter of Credit Fee",
+        "definition": ""
+      }
+    ]
+  },
+  {
+    "name": "Money Movement-Inbound",
+    "definition": "This is the main request type",
+    "subtype": [
+      {
+        "name": "Principal",
+        "definition": ""
+      },
+      {
+        "name": "Interest",
+        "definition": ""
+      },
+      {
+        "name": "Principal+Interest",
+        "definition": ""
+      },
+      {
+        "name": "Principal+Interest+Fee",
+        "definition": ""
+      }
+    ]
+  },
+  {
+    "name": "Money Movement-Outbound",
+    "definition": "",
+    "subtype": [
+      {
+        "name": "Timebound",
+        "definition": ""
+      },
+      {
+        "name": "Foreign Currency",
+        "definition": ""
+      }
+    ]
+  }
+]

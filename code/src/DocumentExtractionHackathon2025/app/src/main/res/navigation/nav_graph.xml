@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/pdfExtractorFragment">
+
+    <fragment
+        android:id="@+id/pdfExtractorFragment"
+        android:name="com.example.documentextractionhackathon2025.PdfExtractorFragment"
+        android:label="@string/txt_pdf_extractor"
+        tools:layout="@layout/fragment_pdf_extractor">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.example.documentextractionhackathon2025.SecondFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/pdfExtractorFragment" />
+    </fragment>
+</navigation>
