@@ -39,6 +39,18 @@
             app:layout_constraintTop_toBottomOf="@+id/btnPickPdf"
             tools:text="Hello i am a sample PDF" />
 
+        <TextView
+            android:id="@+id/orBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:gravity="center"
+            android:text="@string/or"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/extracted_tv"
+            tools:text="OR" />
+
         <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/inputText"
             android:layout_width="match_parent"
@@ -52,7 +64,7 @@
             android:text="@={viewModel.inputText}"
             android:textColor="@color/black"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/extracted_tv" />
+            app:layout_constraintTop_toBottomOf="@+id/orBtn" />
 
         <LinearLayout
             android:id="@+id/submitBtnLayout"
@@ -76,7 +88,6 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
                 android:layout_weight="1"
-                android:onClick="@{() -> viewModel.submitInput()}"
                 android:text="@string/submit" />
         </LinearLayout>
 

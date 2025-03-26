@@ -10,8 +10,8 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import com.example.documentextractionhackathon2025.data.PromptBuilder
-import com.example.documentextractionhackathon2025.data.RequestTypeParser
 import com.example.documentextractionhackathon2025.data.RequestType
+import com.example.documentextractionhackathon2025.data.RequestTypeParser
 import com.google.ai.client.generativeai.GenerativeModel
 import com.google.ai.client.generativeai.type.generationConfig
 import com.tom_roush.pdfbox.pdmodel.PDDocument
@@ -25,7 +25,7 @@ class PdfExtractorViewModel(val applicationCntxt: Application) :
     AndroidViewModel(applicationCntxt) {
 
     val extractedText = MutableLiveData("Extracted text will appear here...")
-    val aiResponse = MutableLiveData("Please wait, Getting Response from Ai agent...")
+    val aiResponse = MutableLiveData("Ai Response will appear here...")
     private lateinit var pdfPickerLauncher: ActivityResultLauncher<Intent>
     val inputText = MutableLiveData("")
 
@@ -75,7 +75,15 @@ class PdfExtractorViewModel(val applicationCntxt: Application) :
 
     fun submitInput() {
         if(!inputText.value.isNullOrEmpty()){
-            inputText.value?.let { getAiResFromGemini(it)}
+            try {
+                val prompt = PromptBuilder.createPrompt(requestDataList, inputText.value!!)
+                println("Request prompt : $prompt")
+                getAiResFromGemini(prompt)
+                return
+            }catch (ex: Exception){
+                println("Exception occurred while creating the prompt : ${ex.message}")
+                return
+            }
         }
     }
 
@@ -88,20 +96,9 @@ class PdfExtractorViewModel(val applicationCntxt: Application) :
         file?.let { pdfFile ->
             val textFromPdfBox = extractTextFromPdf(pdfFile)
             if (textFromPdfBox.isNotBlank()) {
-
-                val emailContent = """
-                Hello Support,  
-                I recently tried to make a payment for my subscription, but it failed, and I was still charged. I would like a refund for this incorrect charge. Please help me resolve this issue.  
-                Thanks,  
-                John Doe 
-                """
-
-              //  extractedText.postValue(textFromPdfBox)
-                //  getAiResponse(textFromPdfBox)
                 try {
-                    val prompt = PromptBuilder.createPrompt(requestDataList, emailContent)
-                    println("Elius :The final prompt")
-                    println("Elius:$prompt")
+                    val prompt = PromptBuilder.createPrompt(requestDataList, textFromPdfBox)
+                    println("Request prompt : $prompt")
                     getAiResFromGemini(prompt)
                     return
                 }catch (ex: Exception){
@@ -147,7 +144,7 @@ class PdfExtractorViewModel(val applicationCntxt: Application) :
 
         val generativeModel = GenerativeModel(
             modelName = "gemini-1.5-flash-latest",
-            apiKey = "",
+            apiKey = "AIzaSyDl-tboW9TsIhw626MXVY6zQyNrT96zzBA",
             generationConfig = config
         )
 

@@ -5,91 +5,91 @@
   },
   {
     "name": "Au Transfer",
-    "definition": "This is the main request type"
+    "definition": "Refers to the automatic movement of funds between accounts, typically for loan payments, overdraft protection, or scheduled transfers. This ensures timely payments, reduces manual intervention, and helps customers manage their finances efficiently."
   },
   {
     "name": "Closing Notice",
-    "definition": "",
+    "definition": "Closing Notice refers to an official communication informing a customer about the closure of a loan account or banking service. This notice includes details such as the final payment, outstanding dues (if any), and the effective closure date. It ensures transparency and serves as a record of account termination.",
     "subtype": [
       {
         "name": "Reallocation fees",
-        "definition": ""
+        "definition": "It refer to charges applied when outstanding loan balances or funds are reallocated to a different account or loan product during the closure process. These fees may cover administrative costs or adjustments required for the reallocation"
       },
       {
         "name": "Amendment fees",
-        "definition": ""
+        "definition": "It refer to charges incurred when modifications or changes are made to loan terms or account details during the closure process. These fees may apply to contract revisions, payment schedule adjustments, or other administrative updates before finalizing the account closure."
       },
       {
         "name": "Reallocation Principal",
-        "definition": ""
+        "definition": "It refers to the process of transferring the remaining loan principal to another account or loan product during closure. This ensures proper fund allocation and may be subject to specific terms and conditions set by the bank."
       }
     ]
   },
   {
     "name": "Commitment Change",
-    "definition": "",
+    "definition": "Commitment Change refers to a modification in the agreed loan terms, such as credit limits, repayment schedules, or interest rates. This change may be requested by the customer or initiated by the bank based on financial assessments, policy updates, or contractual agreements.",
     "subtype": [
       {
         "name": "Cashless Roll",
-        "definition": ""
+        "definition": "It refers to the renewal or extension of a loan or credit facility without requiring a new cash disbursement. Instead, the existing principal is rolled over under revised terms, such as a new maturity date or adjusted interest rates, without additional funding."
       },
       {
         "name": "Decrease",
-        "definition": ""
+        "definition": "It refers to a reduction in the total loan commitment or credit limit. This may occur due to a borrower's request, risk assessment by the bank, or policy changes, impacting the available credit or outstanding loan balance."
       },
       {
         "name": "Increase",
-        "definition": ""
+        "definition": "It refers to an expansion of the total loan commitment or credit limit. This may be approved based on the borrower's request, financial eligibility, or revised lending terms, allowing access to additional funds under the existing agreement."
       }
     ]
   },
   {
     "name": "Fee Payment",
-    "definition": "",
+    "definition": "Fee Payment refers to the process of paying charges associated with a loan or banking service. These fees may include processing fees, late payment penalties, service charges, or administrative costs, and are typically paid by the borrower as per the loan agreement or banking policies.",
     "subtype": [
       {
         "name": "Ongoing fee",
-        "definition": ""
+        "definition": "refers to recurring charges that a borrower must pay periodically throughout the loan term. These fees may include service fees, maintenance fees, or administrative costs associated with keeping the loan active."
       },
       {
         "name": "Letter of Credit Fee",
-        "definition": ""
+        "definition": "It refers to the charges associated with issuing, amending, or maintaining a Letter of Credit (LC). These fees cover the bank’s service in guaranteeing payments for international or domestic trade transactions, ensuring financial security for both buyers and sellers."
       }
     ]
   },
   {
     "name": "Money Movement-Inbound",
-    "definition": "This is the main request type",
+    "definition": "It Money Movement-Inbound refers to the process of receiving funds into a loan or bank account. This can include loan disbursements, customer deposits, incoming wire transfers, or payments made toward loan balances.",
     "subtype": [
       {
         "name": "Principal",
-        "definition": ""
+        "definition": "It refers to the receipt of funds specifically applied toward the outstanding loan principal balance. This includes borrower payments, lump-sum reductions, or external deposits intended to pay down the loan amount, excluding interest or fees."
       },
       {
         "name": "Interest",
-        "definition": ""
+        "definition": "refers to the receipt of funds specifically applied toward the interest portion of a loan. These payments may come from scheduled borrower payments, accrued interest settlements, or adjustments made to cover interest charges separately from the principal amount."
       },
       {
         "name": "Principal+Interest",
-        "definition": ""
+        "definition": "It refers to the receipt of funds that cover both the loan principal and the accrued interest in a single payment. This includes regular loan repayments, lump-sum payments, or automatic deductions that contribute to reducing both the outstanding balance and interest owed."
       },
       {
         "name": "Principal+Interest+Fee",
-        "definition": ""
+        "definition": "It refers to the receipt of funds that cover the loan principal, accrued interest, and any applicable fees in a single payment. This includes scheduled loan repayments or lump-sum payments that settle outstanding balances while also addressing service charges, late fees, or administrative costs."
       }
     ]
   },
   {
     "name": "Money Movement-Outbound",
-    "definition": "",
+    "definition": "Money Movement-Outbound refers to the process of transferring funds out of a loan or bank account. This can include loan disbursements, customer withdrawals, outbound wire transfers, refunds, or payments made to external accounts.",
     "subtype": [
       {
-        "name": "Timebound",
-        "definition": ""
+        "name": "Time bound",
+        "definition": "Time bound (a subtype of Money Movement-Outbound) refers to scheduled fund transfers or payments that must be completed within a specific timeframe. This includes loan disbursements, repayments, or outbound transfers that are subject to deadlines, ensuring timely processing and compliance with financial agreements."
       },
       {
         "name": "Foreign Currency",
-        "definition": ""
+        "definition": "Foreign Currency (a subtype of Money Movement-Outbound) refers to the transfer of funds from a loan or bank account in a currency different from the account’s base currency. This includes international wire transfers, foreign loan disbursements, or currency conversion payments, often subject to exchange rates and transaction fees."
       }
     ]
   }
