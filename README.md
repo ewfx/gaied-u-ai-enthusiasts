@@ -1,20 +1,20 @@
 # 🚀 Project Name
 
 ## 📌 Table of Contents
-- [Introduction](#Categorizing customer service requests manually is slow, inconsistent, and error-prone.)
-- [Demo](#/artifacts/demo/)
-- [Inspiration](#To make human life easy to process customer requests with cutting edge technologies like Generative AI.)
-- [What It Does](#what-it-does)
-- [How We Built It](#how-we-built-it)
-- [Challenges We Faced](#challenges-we-faced)
-- [How to Run](#how-to-run)
-- [Tech Stack](#tech-stack)
-- [Team](#team)
+- [Introduction](#)
+- [Demo](#)
+- [Inspiration](#)
+- [What It Does](#)
+- [How We Built It](#)
+- [Challenges We Faced](#)
+- [How to Run](#)
+- [Tech Stack](#Generative AI Model - Gemini-1.5-Flash, Android Native Development, Android Studio, Kotlin)
+- [Team](#UAIEnthusiasts)
 
 ---
 
 ## 🎯 Introduction
-A brief overview of your project and its purpose. Mention which problem statement are your attempting to solve. Keep it concise and engaging.
+Categorizing customer service requests manually is slow, inconsistent, and error-prone. To resolve this problem, this process needs to be automated. Generative AI provides efficient solution to make it automated.
 
 ## 🎥 Demo
 🔗 [Live Demo](#) (if applicable)  
@@ -24,37 +24,29 @@ A brief overview of your project and its purpose. Mention which problem statemen
 ![Screenshot 1](link-to-image)
 
 ## 💡 Inspiration
-What inspired you to create this project? Describe the problem you're solving.
+To make human life easy to process customer requests with cutting edge technologies like Generative AI.
 
 ## ⚙️ What It Does
-Explain the key features and functionalities of your project.
+It reads the requests in email docs, analyses the same and classifies the content into predefined request categories like type, subtype, etc.
 
 ## 🛠️ How We Built It
-Briefly outline the technologies, frameworks, and tools used in development.
+We made use of cutting edge technologies like Generative AI, Native Mobile tech to achieve this goal.
 
 ## 🚧 Challenges We Faced
-Describe the major technical or non-technical challenges your team encountered.
+Initially we tried with Open AI model but later came to know it has some limited quota which was exceeded. Hence, we switched to another model from Google (Gemini-1.5-Flash) which actually helped us to complete this challenge. We were flexible enough to switch between the two AI Model providers at run time of the hackathon event. 
 
 ## 🏃 How to Run
-1. Clone the repository  
-   ```sh
-   git clone https://github.com/your-repo.git
-   ```
-2. Install dependencies  
-   ```sh
-   npm install  # or pip install -r requirements.txt (for Python)
-   ```
-3. Run the project  
-   ```sh
-   npm start  # or python app.py
-   ```
+As this is a Native Android Mobile App, you need to run the project in Android Studio IDE which will build an APK file and the same can be installed on Android Mobile Device/Emulator.
 
 ## 🏗️ Tech Stack
-- 🔹 Frontend: React / Vue / Angular
-- 🔹 Backend: Node.js / FastAPI / Django
-- 🔹 Database: PostgreSQL / Firebase
-- 🔹 Other: OpenAI API / Twilio / Stripe
+- 🔹 Frontend: Native Android
+- 🔹 Backend: Google AI Client embedded in Fronend 
+- 🔹 Database: NA
+- 🔹 Other: Gemini-1.5-Flash AI Model
 
-## 👥 Team
-- **Your Name** - [GitHub](#) | [LinkedIn](#)
-- **Teammate 2** - [GitHub](#) | [LinkedIn](#)
+## 👥 Team - UAIEnthusiasts
+- **Ajoy Kumar** - [GitHub](#) | [LinkedIn](#)
+- **Abhijeet M Roy** - [GitHub](#) | [LinkedIn](#)
+- **Balbir Singh** - [GitHub](#) | [LinkedIn](#)
+- **Elius Mamun** - [GitHub](#) | [LinkedIn](#)
+- **Sushil Singh** - [GitHub](#) | [LinkedIn](#)
