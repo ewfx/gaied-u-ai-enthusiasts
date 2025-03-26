@@ -1,9 +1,9 @@
 # 🚀 Project Name
 
 ## 📌 Table of Contents
-- [Introduction](#introduction)
-- [Demo](#demo)
-- [Inspiration](#inspiration)
+- [Introduction](#Categorizing customer service requests manually is slow, inconsistent, and error-prone.)
+- [Demo](#/artifacts/demo/)
+- [Inspiration](#To make human life easy to process customer requests with cutting edge technologies like Generative AI.)
 - [What It Does](#what-it-does)
 - [How We Built It](#how-we-built-it)
 - [Challenges We Faced](#challenges-we-faced)
