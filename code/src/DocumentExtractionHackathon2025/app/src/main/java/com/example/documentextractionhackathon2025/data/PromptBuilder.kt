@@ -9,7 +9,7 @@ object PromptBuilder {
         val requestTypeString = constructRequestTypesAndSubtypes(requestTypes)
 
         val prompt = """
-    You are an AI assistant trained to analyze customer emails and classify them into predefined request types and subtypes based on their content.
+    You are an AI assistant trained to analyze customer emails (In the context of Loan service platform and commercial banking) and classify them into predefined request types and subtypes based on their content.
 
     **Instructions:**
     1. **Understand Request Types and Subtypes:**
