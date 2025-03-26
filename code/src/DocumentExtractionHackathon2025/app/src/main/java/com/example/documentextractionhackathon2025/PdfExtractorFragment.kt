@@ -52,6 +52,7 @@ class PdfExtractorFragment : Fragment() {
             hideKeyboard(requireContext(), binding.inputText)
             pdfExtractorViewModel.submitInput()
         }
+
         /*pdfExtractorViewModel.aiResponse.observe(viewLifecycleOwner){ outputContent->
             binding.aiResponseTv.text = Html.fromHtml(outputContent, Html.FROM_HTML_MODE_LEGACY)
         }*/

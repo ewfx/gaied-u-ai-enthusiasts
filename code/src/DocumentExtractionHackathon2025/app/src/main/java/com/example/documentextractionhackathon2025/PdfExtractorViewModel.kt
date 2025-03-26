@@ -89,6 +89,7 @@ class PdfExtractorViewModel(val applicationCntxt: Application) :
 
     fun clearInput() {
         inputText.value = ""
+        aiResponse.value = "Ai Response will appear here..."
     }
 
     fun processSelectedPdf(uri: Uri) {
@@ -144,7 +145,7 @@ class PdfExtractorViewModel(val applicationCntxt: Application) :
 
         val generativeModel = GenerativeModel(
             modelName = "gemini-1.5-flash-latest",
-            apiKey = "AIzaSyDl-tboW9TsIhw626MXVY6zQyNrT96zzBA",
+            apiKey = "",
             generationConfig = config
         )
 
